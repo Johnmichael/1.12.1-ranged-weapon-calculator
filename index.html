@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Aspect of the Hawk DPS Calculator</title>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <div id="parent">
+    <div id="child">
+      <form>
+        <div class="form-group">
+          <h4><input  class="form-control" id="name"> Name of Weapon<br><br>
+          <input  class="form-control" id="min"> Base Damage Minimum<br><br>
+          <input  class="form-control" id="max"> Base Damage Maximum<br><br>
+          <input  class="form-control" id="speed"> Weapon Speed<br><br>
+          <input type="number"  class="form-control" id="extraDamage"> Additional Damage <br><br>
+          <select name="impAspect" id="hawk">
+            <option value="0">0/5</option>
+            <option value="1">1/5</option>
+            <option value="2">2/5</option>
+            <option value="3">3/5</option>
+            <option value="4">4/5</option>
+            <option value="5">5/5</option>
+          </select> Improved Aspect of the Hawk<br><br></h4>
+          <p>While Aspect of the Hawk is active, all normal ranged attacks have a <span id="hawkChance">0</span>% chance of increasing ranged attack speed by 30% for 12 sec.</p>
+        </div>
+        <br>
+        <button class="btn btn-secondary" type="button" id="button">Submit</button><br><br><br>
+        <textarea id="output"></textarea>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
